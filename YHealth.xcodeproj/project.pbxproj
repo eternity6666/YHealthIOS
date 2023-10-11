@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A308B1F02AD6BC5A00ECE1C4 /* YHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B1EF2AD6BC5A00ECE1C4 /* YHealthApp.swift */; };
+		A308B1F22AD6BC5A00ECE1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B1F12AD6BC5A00ECE1C4 /* ContentView.swift */; };
+		A308B1F42AD6BC5A00ECE1C4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B1F32AD6BC5A00ECE1C4 /* Item.swift */; };
+		A308B1F62AD6BC5C00ECE1C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A308B1F52AD6BC5C00ECE1C4 /* Assets.xcassets */; };
+		A308B1FA2AD6BC5C00ECE1C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A308B1F92AD6BC5C00ECE1C4 /* Preview Assets.xcassets */; };
+		A308B2052AD6BC5C00ECE1C4 /* YHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2042AD6BC5C00ECE1C4 /* YHealthTests.swift */; };
+		A308B20F2AD6BC5C00ECE1C4 /* YHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B20E2AD6BC5C00ECE1C4 /* YHealthUITests.swift */; };
+		A308B2112AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A308B2012AD6BC5C00ECE1C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A308B1E42AD6BC5A00ECE1C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A308B1EB2AD6BC5A00ECE1C4;
+			remoteInfo = YHealth;
+		};
+		A308B20B2AD6BC5C00ECE1C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A308B1E42AD6BC5A00ECE1C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A308B1EB2AD6BC5A00ECE1C4;
+			remoteInfo = YHealth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A308B1EC2AD6BC5A00ECE1C4 /* YHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A308B1EF2AD6BC5A00ECE1C4 /* YHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHealthApp.swift; sourceTree = "<group>"; };
+		A308B1F12AD6BC5A00ECE1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A308B1F32AD6BC5A00ECE1C4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A308B1F52AD6BC5C00ECE1C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A308B1F72AD6BC5C00ECE1C4 /* YHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YHealth.entitlements; sourceTree = "<group>"; };
+		A308B1F92AD6BC5C00ECE1C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A308B1FB2AD6BC5C00ECE1C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A308B2002AD6BC5C00ECE1C4 /* YHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A308B2042AD6BC5C00ECE1C4 /* YHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHealthTests.swift; sourceTree = "<group>"; };
+		A308B20A2AD6BC5C00ECE1C4 /* YHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A308B20E2AD6BC5C00ECE1C4 /* YHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHealthUITests.swift; sourceTree = "<group>"; };
+		A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A308B1E92AD6BC5A00ECE1C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A308B1FD2AD6BC5C00ECE1C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A308B2072AD6BC5C00ECE1C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A308B1E32AD6BC5A00ECE1C4 = {
+			isa = PBXGroup;
+			children = (
+				A308B1EE2AD6BC5A00ECE1C4 /* YHealth */,
+				A308B2032AD6BC5C00ECE1C4 /* YHealthTests */,
+				A308B20D2AD6BC5C00ECE1C4 /* YHealthUITests */,
+				A308B1ED2AD6BC5A00ECE1C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A308B1ED2AD6BC5A00ECE1C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A308B1EC2AD6BC5A00ECE1C4 /* YHealth.app */,
+				A308B2002AD6BC5C00ECE1C4 /* YHealthTests.xctest */,
+				A308B20A2AD6BC5C00ECE1C4 /* YHealthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A308B1EE2AD6BC5A00ECE1C4 /* YHealth */ = {
+			isa = PBXGroup;
+			children = (
+				A308B1EF2AD6BC5A00ECE1C4 /* YHealthApp.swift */,
+				A308B1F12AD6BC5A00ECE1C4 /* ContentView.swift */,
+				A308B1F32AD6BC5A00ECE1C4 /* Item.swift */,
+				A308B1F52AD6BC5C00ECE1C4 /* Assets.xcassets */,
+				A308B1F72AD6BC5C00ECE1C4 /* YHealth.entitlements */,
+				A308B1FB2AD6BC5C00ECE1C4 /* Info.plist */,
+				A308B1F82AD6BC5C00ECE1C4 /* Preview Content */,
+			);
+			path = YHealth;
+			sourceTree = "<group>";
+		};
+		A308B1F82AD6BC5C00ECE1C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A308B1F92AD6BC5C00ECE1C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A308B2032AD6BC5C00ECE1C4 /* YHealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				A308B2042AD6BC5C00ECE1C4 /* YHealthTests.swift */,
+			);
+			path = YHealthTests;
+			sourceTree = "<group>";
+		};
+		A308B20D2AD6BC5C00ECE1C4 /* YHealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A308B20E2AD6BC5C00ECE1C4 /* YHealthUITests.swift */,
+				A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */,
+			);
+			path = YHealthUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A308B1EB2AD6BC5A00ECE1C4 /* YHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A308B2142AD6BC5C00ECE1C4 /* Build configuration list for PBXNativeTarget "YHealth" */;
+			buildPhases = (
+				A308B1E82AD6BC5A00ECE1C4 /* Sources */,
+				A308B1E92AD6BC5A00ECE1C4 /* Frameworks */,
+				A308B1EA2AD6BC5A00ECE1C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YHealth;
+			productName = YHealth;
+			productReference = A308B1EC2AD6BC5A00ECE1C4 /* YHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A308B1FF2AD6BC5C00ECE1C4 /* YHealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A308B2172AD6BC5C00ECE1C4 /* Build configuration list for PBXNativeTarget "YHealthTests" */;
+			buildPhases = (
+				A308B1FC2AD6BC5C00ECE1C4 /* Sources */,
+				A308B1FD2AD6BC5C00ECE1C4 /* Frameworks */,
+				A308B1FE2AD6BC5C00ECE1C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A308B2022AD6BC5C00ECE1C4 /* PBXTargetDependency */,
+			);
+			name = YHealthTests;
+			productName = YHealthTests;
+			productReference = A308B2002AD6BC5C00ECE1C4 /* YHealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A308B2092AD6BC5C00ECE1C4 /* YHealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A308B21A2AD6BC5C00ECE1C4 /* Build configuration list for PBXNativeTarget "YHealthUITests" */;
+			buildPhases = (
+				A308B2062AD6BC5C00ECE1C4 /* Sources */,
+				A308B2072AD6BC5C00ECE1C4 /* Frameworks */,
+				A308B2082AD6BC5C00ECE1C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A308B20C2AD6BC5C00ECE1C4 /* PBXTargetDependency */,
+			);
+			name = YHealthUITests;
+			productName = YHealthUITests;
+			productReference = A308B20A2AD6BC5C00ECE1C4 /* YHealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A308B1E42AD6BC5A00ECE1C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A308B1EB2AD6BC5A00ECE1C4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A308B1FF2AD6BC5C00ECE1C4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A308B1EB2AD6BC5A00ECE1C4;
+					};
+					A308B2092AD6BC5C00ECE1C4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A308B1EB2AD6BC5A00ECE1C4;
+					};
+				};
+			};
+			buildConfigurationList = A308B1E72AD6BC5A00ECE1C4 /* Build configuration list for PBXProject "YHealth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A308B1E32AD6BC5A00ECE1C4;
+			productRefGroup = A308B1ED2AD6BC5A00ECE1C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A308B1EB2AD6BC5A00ECE1C4 /* YHealth */,
+				A308B1FF2AD6BC5C00ECE1C4 /* YHealthTests */,
+				A308B2092AD6BC5C00ECE1C4 /* YHealthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A308B1EA2AD6BC5A00ECE1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A308B1FA2AD6BC5C00ECE1C4 /* Preview Assets.xcassets in Resources */,
+				A308B1F62AD6BC5C00ECE1C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A308B1FE2AD6BC5C00ECE1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A308B2082AD6BC5C00ECE1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A308B1E82AD6BC5A00ECE1C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A308B1F22AD6BC5A00ECE1C4 /* ContentView.swift in Sources */,
+				A308B1F42AD6BC5A00ECE1C4 /* Item.swift in Sources */,
+				A308B1F02AD6BC5A00ECE1C4 /* YHealthApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A308B1FC2AD6BC5C00ECE1C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A308B2052AD6BC5C00ECE1C4 /* YHealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A308B2062AD6BC5C00ECE1C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A308B2112AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift in Sources */,
+				A308B20F2AD6BC5C00ECE1C4 /* YHealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A308B2022AD6BC5C00ECE1C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A308B1EB2AD6BC5A00ECE1C4 /* YHealth */;
+			targetProxy = A308B2012AD6BC5C00ECE1C4 /* PBXContainerItemProxy */;
+		};
+		A308B20C2AD6BC5C00ECE1C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A308B1EB2AD6BC5A00ECE1C4 /* YHealth */;
+			targetProxy = A308B20B2AD6BC5C00ECE1C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A308B2122AD6BC5C00ECE1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A308B2132AD6BC5C00ECE1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A308B2152AD6BC5C00ECE1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = YHealth/YHealth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = YKULDT8YN9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YHealth/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yzh.YHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A308B2162AD6BC5C00ECE1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = YHealth/YHealth.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = YKULDT8YN9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YHealth/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yzh.YHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A308B2182AD6BC5C00ECE1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKULDT8YN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yzh.YHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YHealth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YHealth";
+			};
+			name = Debug;
+		};
+		A308B2192AD6BC5C00ECE1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKULDT8YN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yzh.YHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YHealth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YHealth";
+			};
+			name = Release;
+		};
+		A308B21B2AD6BC5C00ECE1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKULDT8YN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yzh.YHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YHealth;
+			};
+			name = Debug;
+		};
+		A308B21C2AD6BC5C00ECE1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKULDT8YN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yzh.YHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YHealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A308B1E72AD6BC5A00ECE1C4 /* Build configuration list for PBXProject "YHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A308B2122AD6BC5C00ECE1C4 /* Debug */,
+				A308B2132AD6BC5C00ECE1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A308B2142AD6BC5C00ECE1C4 /* Build configuration list for PBXNativeTarget "YHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A308B2152AD6BC5C00ECE1C4 /* Debug */,
+				A308B2162AD6BC5C00ECE1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A308B2172AD6BC5C00ECE1C4 /* Build configuration list for PBXNativeTarget "YHealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A308B2182AD6BC5C00ECE1C4 /* Debug */,
+				A308B2192AD6BC5C00ECE1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A308B21A2AD6BC5C00ECE1C4 /* Build configuration list for PBXNativeTarget "YHealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A308B21B2AD6BC5C00ECE1C4 /* Debug */,
+				A308B21C2AD6BC5C00ECE1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A308B1E42AD6BC5A00ECE1C4 /* Project object */;
+}
