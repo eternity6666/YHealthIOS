@@ -15,6 +15,8 @@
 		A308B2052AD6BC5C00ECE1C4 /* YHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2042AD6BC5C00ECE1C4 /* YHealthTests.swift */; };
 		A308B20F2AD6BC5C00ECE1C4 /* YHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B20E2AD6BC5C00ECE1C4 /* YHealthUITests.swift */; };
 		A308B2112AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */; };
+		A308B21F2AD6C00D00ECE1C4 /* YHKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B21E2AD6C00D00ECE1C4 /* YHKManager.swift */; };
+		A308B2222AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		A308B20A2AD6BC5C00ECE1C4 /* YHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A308B20E2AD6BC5C00ECE1C4 /* YHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHealthUITests.swift; sourceTree = "<group>"; };
 		A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A308B21E2AD6C00D00ECE1C4 /* YHKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKManager.swift; sourceTree = "<group>"; };
+		A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKCharacteristicUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		A308B1EE2AD6BC5A00ECE1C4 /* YHealth */ = {
 			isa = PBXGroup;
 			children = (
+				A308B2202AD6EF8600ECE1C4 /* utils */,
+				A308B21D2AD6BFF500ECE1C4 /* data */,
 				A308B1EF2AD6BC5A00ECE1C4 /* YHealthApp.swift */,
 				A308B1F12AD6BC5A00ECE1C4 /* ContentView.swift */,
 				A308B1F32AD6BC5A00ECE1C4 /* Item.swift */,
@@ -132,6 +138,22 @@
 				A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */,
 			);
 			path = YHealthUITests;
+			sourceTree = "<group>";
+		};
+		A308B21D2AD6BFF500ECE1C4 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A308B21E2AD6C00D00ECE1C4 /* YHKManager.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A308B2202AD6EF8600ECE1C4 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A308B2222AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift in Sources */,
 				A308B1F22AD6BC5A00ECE1C4 /* ContentView.swift in Sources */,
 				A308B1F42AD6BC5A00ECE1C4 /* Item.swift in Sources */,
 				A308B1F02AD6BC5A00ECE1C4 /* YHealthApp.swift in Sources */,
+				A308B21F2AD6C00D00ECE1C4 /* YHKManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

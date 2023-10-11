@@ -13,6 +13,9 @@ struct YHealthApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    
+                }
         }
     }
 }

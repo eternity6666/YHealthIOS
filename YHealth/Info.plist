@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>这个 App 会读取你的 Health 数据库中的数据</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>这个 App 会向你的 Health 数据库中写入数据</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
