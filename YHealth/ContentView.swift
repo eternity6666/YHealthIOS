@@ -17,7 +17,6 @@ struct StepCountData {
 struct ContentView: View {
     @State private var bloodType: HKBloodType = .notSet
     @State private var stepCount: [StepCountData] = []
-    @State private var stepCount2: [StepCountData] = []
     
     var body: some View {
         ScrollView {
@@ -34,38 +33,16 @@ struct ContentView: View {
                         Text(bloodType.name)
                     }
                     Button {
-                        let option = getStatisticsOptions(for: HKQuantityTypeIdentifier.stepCount.rawValue)
-                        YHKManager.shared.fetchStepCount {
-                            var values: [StepCountData] = []
-                            var values2: [StepCountData] = []
-                            let oneDay = 24 * 60 * 60
-                            $0.statistics().forEach { statistic in
-                                let statisticsQuantity = getStatisticsQuantity(for: statistic, with: option)
-                                if let value = statisticsQuantity?.doubleValue(for: .count()) {
-                                    values.append(StepCountData(date: statistic.startDate, stepCount: value))
-                                    values2.append(StepCountData(date: statistic.endDate, stepCount: value))
-                                }
-                            }
-                            stepCount = values
-                            stepCount2 = values2
-                        }
+                        fetchStepCount()
                     } label: {
                         Text("获取步数")
                     }
                     VStack {
                         ForEach(stepCount.indices, id: \.self) { index in
                             HStack {
-                                Text("\(stepCount[index].date.formatted())")
+                                Text("\(stepCount[index].date.formatted(date: .numeric, time: .omitted))")
                                 Spacer()
-                                Text("\(stepCount[index].stepCount)")
-                            }
-                        }
-                        Spacer(minLength: 20)
-                        ForEach(stepCount2.indices, id: \.self) { index in
-                            HStack {
-                                Text("\(stepCount2[index].date.formatted())")
-                                Spacer()
-                                Text("\(stepCount2[index].stepCount)")
+                                Text("\(Int(stepCount[index].stepCount))")
                             }
                         }
                     }
@@ -76,6 +53,22 @@ struct ContentView: View {
                     bloodType = YHKManager.shared.fetchBloodType()
                 }
             }
+        }
+    }
+    
+    private func fetchStepCount() {
+        let option = getStatisticsOptions(for: HKQuantityTypeIdentifier.stepCount.rawValue)
+        let start = Date.now.addingTimeInterval(-6*24*3600).zeroTime()
+        let end = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1)
+        YHKManager.shared.fetchStepCount(start: start, end: end) {
+            var values: [StepCountData] = []
+            $0.enumerateStatistics(from: start, to: end) { statistic, stop in
+                let statisticsQuantity = getStatisticsQuantity(for: statistic, with: option)
+                if let value = statisticsQuantity?.doubleValue(for: .count()) {
+                    values.append(StepCountData(date: statistic.startDate, stepCount: value))
+                }
+            }
+            stepCount = values
         }
     }
 }

@@ -44,10 +44,16 @@ class YHKManager {
         return .notSet
     }
     
-    func fetchStepCount(block: @escaping (HKStatisticsCollection) -> Void) {
+    func fetchStepCount(
+        start: Date = Date.now.zeroTime(),
+        end: Date = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1),
+        block: @escaping (HKStatisticsCollection) -> Void
+    ) {
+        let predicate = HKQuery.predicateForSamples(withStart: start, end: end)
         let query = HKStatisticsCollectionQuery.init(
             quantityType: HKQuantityType.init(.stepCount),
-            quantitySamplePredicate: nil,
+            quantitySamplePredicate: predicate,
+            options: [.cumulativeSum],
             anchorDate: Date.now.zeroTime(),
             intervalComponents: DateComponents(day: 1)
         )
