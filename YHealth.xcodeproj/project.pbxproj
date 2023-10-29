@@ -17,6 +17,8 @@
 		A308B2112AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */; };
 		A308B21F2AD6C00D00ECE1C4 /* YHKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B21E2AD6C00D00ECE1C4 /* YHKManager.swift */; };
 		A308B2222AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */; };
+		A39428712AEE3E6F009C2518 /* YDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428702AEE3E6F009C2518 /* YDateExtension.swift */; };
+		A39C7C622AED1468000982DC /* YHKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39C7C612AED1468000982DC /* YHKUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A308B21E2AD6C00D00ECE1C4 /* YHKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKManager.swift; sourceTree = "<group>"; };
 		A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKCharacteristicUtils.swift; sourceTree = "<group>"; };
+		A39428702AEE3E6F009C2518 /* YDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDateExtension.swift; sourceTree = "<group>"; };
+		A39C7C612AED1468000982DC /* YHKUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				A308B21E2AD6C00D00ECE1C4 /* YHKManager.swift */,
+				A39C7C612AED1468000982DC /* YHKUtils.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 		A308B2202AD6EF8600ECE1C4 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				A39428702AEE3E6F009C2518 /* YDateExtension.swift */,
 				A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */,
 			);
 			path = utils;
@@ -288,8 +294,10 @@
 			files = (
 				A308B2222AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift in Sources */,
 				A308B1F22AD6BC5A00ECE1C4 /* ContentView.swift in Sources */,
+				A39428712AEE3E6F009C2518 /* YDateExtension.swift in Sources */,
 				A308B1F42AD6BC5A00ECE1C4 /* Item.swift in Sources */,
 				A308B1F02AD6BC5A00ECE1C4 /* YHealthApp.swift in Sources */,
+				A39C7C622AED1468000982DC /* YHKUtils.swift in Sources */,
 				A308B21F2AD6C00D00ECE1C4 /* YHKManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
