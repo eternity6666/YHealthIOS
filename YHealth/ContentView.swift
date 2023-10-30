@@ -52,6 +52,14 @@ struct ContentView: View {
                 .task {
                     bloodType = YHKManager.shared.fetchBloodType()
                 }
+                Button {
+                    YHKManager.shared.fetchStepCount { collection in
+                        stepCountData = "\(collection)"
+                    }
+                } label: {
+                    Text("获取步数")
+                }
+                Text(stepCountData)
             }
         }
     }
