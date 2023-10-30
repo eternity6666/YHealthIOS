@@ -50,19 +50,19 @@ struct ContentView: View {
         }
     }
     
-    private func stepCountMessage() -> String {
+    private func stepCountMessage() -> Int {
         var sum: Double = 0
         stepCount.forEach { item in
             sum += item.stepCount
         }
-        return "\(Int(sum))"
+        return Int(sum)
     }
     
     @ViewBuilder
     private func showStepCountBoard() -> some View {
-        let message = stepCountMessage()
-        if (message != "0") {
-            Text(message)
+        let count = stepCountMessage()
+        if (count > 0) {
+            Text("\(count)")
         }
         Chart(stepCount, id: \.date) { item in
             withAnimation {

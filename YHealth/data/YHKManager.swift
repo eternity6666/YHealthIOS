@@ -11,7 +11,7 @@ import HealthKit
 class YHKManager {
     static let shared = YHKManager()
     
-    let store = HKHealthStore()
+    private let store = HKHealthStore()
     
     private init() {
         
