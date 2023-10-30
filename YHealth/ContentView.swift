@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 import HealthKit
+import Charts
 
 struct StepCountData {
     let date: Date
@@ -33,25 +34,42 @@ struct ContentView: View {
                         Text(bloodType.name)
                     }
                     Button {
-                        fetchStepCount()
+                        withAnimation {
+                            fetchStepCount()
+                        }
                     } label: {
                         Text("获取步数")
                     }
-                    VStack {
-                        ForEach(stepCount.indices, id: \.self) { index in
-                            HStack {
-                                Text("\(stepCount[index].date.formatted(date: .numeric, time: .omitted))")
-                                Spacer()
-                                Text("\(Int(stepCount[index].stepCount))")
-                            }
-                        }
-                    }
-                    
+                    showStepCountBoard()
                 }
                 .padding()
                 .task {
                     bloodType = YHKManager.shared.fetchBloodType()
                 }
+            }
+        }
+    }
+    
+    private func stepCountMessage() -> String {
+        var sum: Double = 0
+        stepCount.forEach { item in
+            sum += item.stepCount
+        }
+        return "\(Int(sum))"
+    }
+    
+    @ViewBuilder
+    private func showStepCountBoard() -> some View {
+        let message = stepCountMessage()
+        if (message != "0") {
+            Text(message)
+        }
+        Chart(stepCount, id: \.date) { item in
+            withAnimation {
+                BarMark(
+                    x: .value("", "\(item.date.day ?? 0)"),
+                    y: .value("", item.stepCount)
+                )
             }
         }
     }
