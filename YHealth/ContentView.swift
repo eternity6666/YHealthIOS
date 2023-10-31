@@ -56,7 +56,7 @@ struct ContentView: View {
                 }
                 .padding()
             )
-            .onTapGesture {
+            .onAppear {
                 fetchStepCount()
             }
         }
@@ -66,7 +66,6 @@ struct ContentView: View {
             stepCount.forEach { item in
                 sum += item.stepCount
             }
-            print(sum)
             return Int(sum)
         }
         
