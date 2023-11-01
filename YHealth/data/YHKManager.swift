@@ -22,6 +22,7 @@ class YHKManager {
         var readSet: [HKObjectType] = []
         readSet.append(HKCharacteristicType.init(.bloodType))
         readSet.append(HKQuantityType.init(.stepCount))
+        readSet.append(HKQuantityType.init(.activeEnergyBurned))
         store.requestAuthorization(toShare: Set(shareSet), read: Set(readSet)) { isSuccess, error in
             if let error = error {
                 print("\(error)")

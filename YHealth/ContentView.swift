@@ -33,6 +33,7 @@ struct ContentView: View {
                         Text(bloodType.name)
                     }
                     YHKStepCountCardView()
+                    YHKActiveEnergyBurnedView()
                 }
                 .padding()
                 .task {

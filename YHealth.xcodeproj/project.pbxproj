@@ -20,6 +20,7 @@
 		A39428712AEE3E6F009C2518 /* YDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428702AEE3E6F009C2518 /* YDateExtension.swift */; };
 		A39428742AEFD2AD009C2518 /* YHKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428732AEFD2AD009C2518 /* YHKCardView.swift */; };
 		A39428792AF2AB7D009C2518 /* YHKStepCountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428782AF2AB7D009C2518 /* YHKStepCountCardView.swift */; };
+		A394287C2AF2B594009C2518 /* YHKActiveEnergyBurnedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A394287B2AF2B594009C2518 /* YHKActiveEnergyBurnedView.swift */; };
 		A39C7C622AED1468000982DC /* YHKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39C7C612AED1468000982DC /* YHKUtils.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		A39428702AEE3E6F009C2518 /* YDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDateExtension.swift; sourceTree = "<group>"; };
 		A39428732AEFD2AD009C2518 /* YHKCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKCardView.swift; sourceTree = "<group>"; };
 		A39428782AF2AB7D009C2518 /* YHKStepCountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKStepCountCardView.swift; sourceTree = "<group>"; };
+		A394287B2AF2B594009C2518 /* YHKActiveEnergyBurnedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKActiveEnergyBurnedView.swift; sourceTree = "<group>"; };
 		A39C7C612AED1468000982DC /* YHKUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +189,7 @@
 		A39428762AF2AB5B009C2518 /* business */ = {
 			isa = PBXGroup;
 			children = (
+				A394287A2AF2B583009C2518 /* activeEnergyBurned */,
 				A39428772AF2AB68009C2518 /* stepcount */,
 			);
 			path = business;
@@ -198,6 +201,14 @@
 				A39428782AF2AB7D009C2518 /* YHKStepCountCardView.swift */,
 			);
 			path = stepcount;
+			sourceTree = "<group>";
+		};
+		A394287A2AF2B583009C2518 /* activeEnergyBurned */ = {
+			isa = PBXGroup;
+			children = (
+				A394287B2AF2B594009C2518 /* YHKActiveEnergyBurnedView.swift */,
+			);
+			path = activeEnergyBurned;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				A39428742AEFD2AD009C2518 /* YHKCardView.swift in Sources */,
 				A39C7C622AED1468000982DC /* YHKUtils.swift in Sources */,
 				A308B21F2AD6C00D00ECE1C4 /* YHKManager.swift in Sources */,
+				A394287C2AF2B594009C2518 /* YHKActiveEnergyBurnedView.swift in Sources */,
 				A39428792AF2AB7D009C2518 /* YHKStepCountCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
