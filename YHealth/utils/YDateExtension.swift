@@ -25,7 +25,7 @@ extension Date {
     }
     
     func zeroTime() -> Date {
-        let calendar = Calendar.init(identifier: .chinese)
+        let calendar = Calendar.current
         let components = calendar.dateComponents([.year, .month, .day], from: self)
         return calendar.date(from: components) ?? self
     }
