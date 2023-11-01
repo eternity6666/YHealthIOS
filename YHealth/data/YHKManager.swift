@@ -65,4 +65,25 @@ class YHKManager {
         }
         store.execute(query)
     }
+    
+    func fetchActiveEnergyBurned(
+            start: Date = Date.now.zeroTime(),
+            end: Date = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1),
+            block: @escaping (HKStatisticsCollection) -> Void
+    ) {
+            let predicate = HKQuery.predicateForSamples(withStart: start, end: end)
+        let query = HKStatisticsCollectionQuery.init(
+            quantityType: HKQuantityType.init(.activeEnergyBurned),
+            quantitySamplePredicate: predicate,
+            options: [.cumulativeSum],
+            anchorDate: Date.now.zeroTime(),
+            intervalComponents: DateComponents(day: 1)
+        )
+        query.initialResultsHandler = { query, results, error in
+            if let collection = results {
+                block(collection)
+            }
+        }
+        store.execute(query)
+    }
 }
