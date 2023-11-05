@@ -17,6 +17,8 @@
 		A308B2112AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */; };
 		A308B21F2AD6C00D00ECE1C4 /* YHKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B21E2AD6C00D00ECE1C4 /* YHKManager.swift */; };
 		A308B2222AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */; };
+		A346DAE22AF69571003587B9 /* YHKDateSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346DAE12AF69571003587B9 /* YHKDateSelectorView.swift */; };
+		A346DAE42AF696D4003587B9 /* YTimeInternalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346DAE32AF696D4003587B9 /* YTimeInternalExtension.swift */; };
 		A39428712AEE3E6F009C2518 /* YDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428702AEE3E6F009C2518 /* YDateExtension.swift */; };
 		A39428742AEFD2AD009C2518 /* YHKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428732AEFD2AD009C2518 /* YHKCardView.swift */; };
 		A39428792AF2AB7D009C2518 /* YHKStepCountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428782AF2AB7D009C2518 /* YHKStepCountCardView.swift */; };
@@ -57,6 +59,8 @@
 		A308B2102AD6BC5C00ECE1C4 /* YHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A308B21E2AD6C00D00ECE1C4 /* YHKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKManager.swift; sourceTree = "<group>"; };
 		A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKCharacteristicUtils.swift; sourceTree = "<group>"; };
+		A346DAE12AF69571003587B9 /* YHKDateSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKDateSelectorView.swift; sourceTree = "<group>"; };
+		A346DAE32AF696D4003587B9 /* YTimeInternalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTimeInternalExtension.swift; sourceTree = "<group>"; };
 		A39428702AEE3E6F009C2518 /* YDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDateExtension.swift; sourceTree = "<group>"; };
 		A39428732AEFD2AD009C2518 /* YHKCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKCardView.swift; sourceTree = "<group>"; };
 		A39428782AF2AB7D009C2518 /* YHKStepCountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKStepCountCardView.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 			children = (
 				A39428702AEE3E6F009C2518 /* YDateExtension.swift */,
 				A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */,
+				A346DAE32AF696D4003587B9 /* YTimeInternalExtension.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				A39428732AEFD2AD009C2518 /* YHKCardView.swift */,
+				A346DAE12AF69571003587B9 /* YHKDateSelectorView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A308B2222AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift in Sources */,
+				A346DAE22AF69571003587B9 /* YHKDateSelectorView.swift in Sources */,
 				A308B1F22AD6BC5A00ECE1C4 /* ContentView.swift in Sources */,
 				A39428712AEE3E6F009C2518 /* YDateExtension.swift in Sources */,
 				A308B1F42AD6BC5A00ECE1C4 /* Item.swift in Sources */,
@@ -349,6 +356,7 @@
 				A39428742AEFD2AD009C2518 /* YHKCardView.swift in Sources */,
 				A39C7C622AED1468000982DC /* YHKUtils.swift in Sources */,
 				A308B21F2AD6C00D00ECE1C4 /* YHKManager.swift in Sources */,
+				A346DAE42AF696D4003587B9 /* YTimeInternalExtension.swift in Sources */,
 				A394287C2AF2B594009C2518 /* YHKActiveEnergyBurnedView.swift in Sources */,
 				A39428792AF2AB7D009C2518 /* YHKStepCountCardView.swift in Sources */,
 			);
