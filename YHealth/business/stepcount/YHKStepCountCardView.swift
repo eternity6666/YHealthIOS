@@ -10,6 +10,8 @@ import Charts
 import HealthKit
 
 struct YHKStepCountCardView: View {
+    @State private var start = Date.now.addingTimeInterval(-6*24*3600).zeroTime()
+    @State private var end = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1)
     @State private var isLoading: Bool = true
     @State private var stepCount: [StepCountData] = []
     
@@ -19,6 +21,9 @@ struct YHKStepCountCardView: View {
             width: 300.0,
             height: 300.0,
             content: VStack {
+                YHKDateSelectorView(startDate: $start, endDate: $end) {
+                    fetchStepCount()
+                }
                 showStepCountBoard()
             }
                 .padding()
@@ -40,7 +45,11 @@ struct YHKStepCountCardView: View {
     private func showStepCountBoard() -> some View {
         let count = stepCountMessage()
         if (count > 0) {
-            Text("\(count)")
+            HStack {
+                Text("总步数")
+                Spacer()
+                Text("\(count)")
+            }
         }
         Chart(stepCount, id: \.date) { item in
             BarMark(
@@ -54,8 +63,6 @@ struct YHKStepCountCardView: View {
         isLoading = true
         stepCount.removeAll()
         let option = getStatisticsOptions(for: HKQuantityTypeIdentifier.stepCount.rawValue)
-        let start = Date.now.addingTimeInterval(-6*24*3600).zeroTime()
-        let end = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1)
         YHKManager.shared.fetchStepCount(start: start, end: end) {
             var values: [StepCountData] = []
             $0.enumerateStatistics(from: start, to: end) { statistic, stop in

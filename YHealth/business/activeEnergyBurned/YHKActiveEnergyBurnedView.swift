@@ -15,7 +15,8 @@ struct YHKActiveEnergyBurnedData {
 }
 
 struct YHKActiveEnergyBurnedView: View {
-    
+    @State private var start = Date.now.addingTimeInterval(-6*24*3600).zeroTime()
+    @State private var end = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1)
     @State private var isLoading: Bool = true
     @State private var activeEnergyBurned: [YHKActiveEnergyBurnedData] = []
     
@@ -25,6 +26,9 @@ struct YHKActiveEnergyBurnedView: View {
             width: 300.0,
             height: 300.0,
             content: VStack {
+                YHKDateSelectorView(startDate: $start, endDate: $end) {
+                    loadData()
+                }
                 showActiveEnergyBurnedData()
             }.padding()
         )
@@ -47,8 +51,6 @@ struct YHKActiveEnergyBurnedView: View {
         isLoading = true
         activeEnergyBurned.removeAll()
         let option = HKStatisticsOptions.cumulativeSum
-        let start = Date.now.addingTimeInterval(-6*24*3600).zeroTime()
-        let end = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1)
         YHKManager.shared.fetchActiveEnergyBurned(start: start, end: end) {
             var values: [YHKActiveEnergyBurnedData] = []
             $0.enumerateStatistics(from: start, to: end) { statistic, stop in
