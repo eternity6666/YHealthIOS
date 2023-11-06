@@ -19,6 +19,7 @@
 		A308B2222AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */; };
 		A346DAE22AF69571003587B9 /* YHKDateSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346DAE12AF69571003587B9 /* YHKDateSelectorView.swift */; };
 		A346DAE42AF696D4003587B9 /* YTimeInternalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346DAE32AF696D4003587B9 /* YTimeInternalExtension.swift */; };
+		A346DAE72AF86D2F003587B9 /* YHKHeartRateBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346DAE62AF86D2F003587B9 /* YHKHeartRateBoardView.swift */; };
 		A39428712AEE3E6F009C2518 /* YDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428702AEE3E6F009C2518 /* YDateExtension.swift */; };
 		A39428742AEFD2AD009C2518 /* YHKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428732AEFD2AD009C2518 /* YHKCardView.swift */; };
 		A39428792AF2AB7D009C2518 /* YHKStepCountCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39428782AF2AB7D009C2518 /* YHKStepCountCardView.swift */; };
@@ -61,6 +62,7 @@
 		A308B2212AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKCharacteristicUtils.swift; sourceTree = "<group>"; };
 		A346DAE12AF69571003587B9 /* YHKDateSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKDateSelectorView.swift; sourceTree = "<group>"; };
 		A346DAE32AF696D4003587B9 /* YTimeInternalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTimeInternalExtension.swift; sourceTree = "<group>"; };
+		A346DAE62AF86D2F003587B9 /* YHKHeartRateBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKHeartRateBoardView.swift; sourceTree = "<group>"; };
 		A39428702AEE3E6F009C2518 /* YDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDateExtension.swift; sourceTree = "<group>"; };
 		A39428732AEFD2AD009C2518 /* YHKCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKCardView.swift; sourceTree = "<group>"; };
 		A39428782AF2AB7D009C2518 /* YHKStepCountCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHKStepCountCardView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,14 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		A346DAE52AF86D16003587B9 /* heartRate */ = {
+			isa = PBXGroup;
+			children = (
+				A346DAE62AF86D2F003587B9 /* YHKHeartRateBoardView.swift */,
+			);
+			path = heartRate;
+			sourceTree = "<group>";
+		};
 		A39428722AEFD29B009C2518 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +205,7 @@
 		A39428762AF2AB5B009C2518 /* business */ = {
 			isa = PBXGroup;
 			children = (
+				A346DAE52AF86D16003587B9 /* heartRate */,
 				A394287A2AF2B583009C2518 /* activeEnergyBurned */,
 				A39428772AF2AB68009C2518 /* stepcount */,
 			);
@@ -350,6 +361,7 @@
 				A308B2222AD6EFAC00ECE1C4 /* YHKCharacteristicUtils.swift in Sources */,
 				A346DAE22AF69571003587B9 /* YHKDateSelectorView.swift in Sources */,
 				A308B1F22AD6BC5A00ECE1C4 /* ContentView.swift in Sources */,
+				A346DAE72AF86D2F003587B9 /* YHKHeartRateBoardView.swift in Sources */,
 				A39428712AEE3E6F009C2518 /* YDateExtension.swift in Sources */,
 				A308B1F42AD6BC5A00ECE1C4 /* Item.swift in Sources */,
 				A308B1F02AD6BC5A00ECE1C4 /* YHealthApp.swift in Sources */,

@@ -23,6 +23,7 @@ class YHKManager {
         readSet.append(HKCharacteristicType.init(.bloodType))
         readSet.append(HKQuantityType.init(.stepCount))
         readSet.append(HKQuantityType.init(.activeEnergyBurned))
+        readSet.append(HKQuantityType.init(.heartRate))
         store.requestAuthorization(toShare: Set(shareSet), read: Set(readSet)) { isSuccess, error in
             if let error = error {
                 print("\(error)")
@@ -67,15 +68,35 @@ class YHKManager {
     }
     
     func fetchActiveEnergyBurned(
-            start: Date = Date.now.zeroTime(),
-            end: Date = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1),
-            block: @escaping (HKStatisticsCollection) -> Void
+        start: Date = Date.now.zeroTime(),
+        end: Date = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1),
+        block: @escaping (HKStatisticsCollection) -> Void
     ) {
-            let predicate = HKQuery.predicateForSamples(withStart: start, end: end)
+        let predicate = HKQuery.predicateForSamples(withStart: start, end: end)
         let query = HKStatisticsCollectionQuery.init(
             quantityType: HKQuantityType.init(.activeEnergyBurned),
             quantitySamplePredicate: predicate,
             options: [.cumulativeSum],
+            anchorDate: Date.now.zeroTime(),
+            intervalComponents: DateComponents(day: 1)
+        )
+        query.initialResultsHandler = { query, results, error in
+            if let collection = results {
+                block(collection)
+            }
+        }
+        store.execute(query)
+    }
+    
+    func fetchHeartRate(
+        start: Date = Date.now.zeroTime(),
+        end: Date = Date.now.addingTimeInterval(24*3600).zeroTime().addingTimeInterval(-1),
+        block: @escaping (HKStatisticsCollection) -> Void
+    ) {
+        let predicate = HKQuery.predicateForSamples(withStart: start, end: end)
+        let query = HKStatisticsCollectionQuery.init(
+            quantityType: .init(.heartRate),
+            quantitySamplePredicate: predicate,
             anchorDate: Date.now.zeroTime(),
             intervalComponents: DateComponents(day: 1)
         )
