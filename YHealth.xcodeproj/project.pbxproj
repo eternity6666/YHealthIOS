@@ -186,6 +186,23 @@
 			path = heartRate;
 			sourceTree = "<group>";
 		};
+		A346DAE82AF9BF54003587B9 /* category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		A346DAE92AF9BF5F003587B9 /* quantity */ = {
+			isa = PBXGroup;
+			children = (
+				A346DAE52AF86D16003587B9 /* heartRate */,
+				A394287A2AF2B583009C2518 /* activeEnergyBurned */,
+				A39428772AF2AB68009C2518 /* stepcount */,
+			);
+			path = quantity;
+			sourceTree = "<group>";
+		};
 		A39428722AEFD29B009C2518 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,9 +222,8 @@
 		A39428762AF2AB5B009C2518 /* business */ = {
 			isa = PBXGroup;
 			children = (
-				A346DAE52AF86D16003587B9 /* heartRate */,
-				A394287A2AF2B583009C2518 /* activeEnergyBurned */,
-				A39428772AF2AB68009C2518 /* stepcount */,
+				A346DAE92AF9BF5F003587B9 /* quantity */,
+				A346DAE82AF9BF54003587B9 /* category */,
 			);
 			path = business;
 			sourceTree = "<group>";
